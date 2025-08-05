@@ -19,15 +19,18 @@ ROS2 HUMBLE:
 
 sick_scan_xd:
 [- https://github.com/SICKAG/sick_scan_xd?tab=readme-ov-file#ros-2-install-prebuilt-binaries](https://github.com/SICKAG/sick_scan_xd)
+
 unzip the file to lidar_ws/src
 
 dual_laser_merger:
+```bash
 cd lidar_ws/src
 git clone -b humble https://github.com/pradyum/dual_laser_merger.git
 cd ..
 rosdep install --from-paths src --ignore-src -r -y
 colcon build --symlink-install
 source install/setup.bash
+```
 
 Wireshark (For finding ip address for lidars):
 ```bash
