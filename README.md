@@ -18,7 +18,7 @@ ROS2 HUMBLE:
 - https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debs.html
 
 sick_scan_xd:
-[- https://github.com/SICKAG/sick_scan_xd?tab=readme-ov-file#ros-2-install-prebuilt-binaries](https://github.com/SICKAG/sick_scan_xd)
+-[- https://github.com/SICKAG/sick_scan_xd?tab=readme-ov-file#ros-2-install-prebuilt-binaries](https://github.com/SICKAG/sick_scan_xd)
 
 unzip the file to lidar_ws/src
 
