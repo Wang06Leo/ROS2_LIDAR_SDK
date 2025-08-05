@@ -7,12 +7,27 @@ ROS2 SDK to enable integration with LiDAR Smart Sensors for robotics and autonom
 - Calibration & Diagnostic Tools
 - Multi-LiDAR Synchronization Module
 
+## Before start
+Make a ROS 2 workspace for this lidar sdk
+```bash
+mkdir -p lidar_ws/src
+```
+
 ## Installations
 ROS2 HUMBLE:
 - https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debs.html
 
 sick_scan_xd:
-- https://github.com/SICKAG/sick_scan_xd?tab=readme-ov-file#ros-2-install-prebuilt-binaries
+[- https://github.com/SICKAG/sick_scan_xd?tab=readme-ov-file#ros-2-install-prebuilt-binaries](https://github.com/SICKAG/sick_scan_xd)
+unzip the file to lidar_ws/src
+
+dual_laser_merger:
+cd lidar_ws/src
+git clone -b humble https://github.com/pradyum/dual_laser_merger.git
+cd ..
+rosdep install --from-paths src --ignore-src -r -y
+colcon build --symlink-install
+source install/setup.bash
 
 Wireshark (For finding ip address for lidars):
 ```bash
@@ -20,16 +35,12 @@ Wireshark (For finding ip address for lidars):
 sudo apt update
 sudo apt install wireshark
 ```
-## Before start
-Make a ROS 2 workspace for this lidar sdk
-```bash
-mkdir -p lidar_ws/src
-```  
 
+## Starting
 Clone the repository into your ROS 2 workspace
 ```bash
 cd lidar_ws/src
-git clone https://github.com/your-org/ROS2_LIDAR_SDK.git
+git clone https://github.com/Wang06Leo/ROS2_LIDAR_SDK.git
 ```
 
 Build the SDK
