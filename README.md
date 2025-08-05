@@ -20,13 +20,14 @@ ROS2 HUMBLE:
 
 sick_scan_xd:
 ```bash
-cd ~/lidar_ws/src
+cd ~/your_ros2_ws/src/lidar_ws/src
 git clone https://github.com/SICKAG/sick_scan_xd.git
+git checkout feature/ros2_kilted_fix
 ```
 
 dual_laser_merger:
 ```bash
-cd ~/lidar_ws/src
+cd ~/your_ros2_ws/src/lidar_ws/src
 git clone -b humble https://github.com/pradyum/dual_laser_merger.git
 cd ..
 rosdep install --from-paths src --ignore-src -r -y
