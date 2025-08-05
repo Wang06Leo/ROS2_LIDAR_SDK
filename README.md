@@ -44,7 +44,7 @@ sudo apt install wireshark
 Clone the repository into your ROS 2 workspace
 ```bash
 cd lidar_ws/src
-git clone https://github.com/Wang06Leo/ROS2_LIDAR_SDK.git
+git clone https://github.com/Wang06Leo/contract.git
 ```
 
 Build the SDK
