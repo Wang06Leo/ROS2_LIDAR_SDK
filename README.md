@@ -11,7 +11,7 @@ ROS2 SDK to enable integration with LiDAR Smart Sensors (SICK Picoscan150) for r
 Clone the repository into your ROS 2 workspace
 ```bash
 cd ~/your_ros2_ws/src
-git clone https://github.com/Wang06Leo/ROS2-SDK-for-Smart-Sensors-Lidar-.git lidar_ws
+git clone https://github.com/Wang06Leo/ROS2-LIDAR-SDK.git lidar_ws
 ```
 
 ## Installations
