@@ -17,8 +17,9 @@ def generate_launch_description():
         executable='static_transform_publisher',
         name='static_tf_lidar_front',
         arguments=[
-            '0.28', '0.0', '0.04',
-            '0', '0', '-3.1415',
+            '0.28', '0.0', '0.04', # Modify this line for x, y, z for first lidar
+            '0', '0', '-3.1415', # Modify this line for r, p, y for first lidar 
+            # (r, p, y stands for roll, pitch yaw)
             'base_link', 'laser_front_1'
         ]
     )
@@ -30,7 +31,7 @@ def generate_launch_description():
         output='log',
         arguments=[
             sick_scan_launch_file,
-            'hostname:=192.168.1.134', #change it with your own lidar ip
+            'hostname:=192.168.1.134', 
             'udp_receiver_ip:=192.168.1.100',
             'udp_port:=2115',
             'imu_udp_port:=7503',
@@ -53,8 +54,9 @@ def generate_launch_description():
         executable='static_transform_publisher',
         name='static_tf_lidar_rear',
         arguments=[
-            '-0.28', '0.0', '0.04',
-            '0', '3.1415', '0',
+            '-0.28', '0.0', '0.04', # Modify this line for x, y, z for second lidar
+            '0', '3.1415', '0', # Modify this line for r, p, y for second lidar
+            # (r, p, y stands for roll, pitch yaw)
             'base_link', 'laser_rear_1'
         ]
     )
@@ -66,7 +68,7 @@ def generate_launch_description():
         output='log',
         arguments=[
             sick_scan_launch_file,
-            'hostname:=192.168.1.133', #change it with your own lidar ip
+            'hostname:=192.168.1.133', 
             'udp_receiver_ip:=192.168.1.100',
             'udp_port:=2112',
             'imu_udp_port:=7500',

@@ -55,7 +55,7 @@ def generate_launch_description():
             os.path.join(
                 get_package_share_directory('lidar_driver'),
                 'config',
-                'rviz.rviz'
+                'rviz_first.rviz'
             )
         ]
     )
