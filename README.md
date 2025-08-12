@@ -58,7 +58,6 @@ sudo apt install wireshark
 4. Look for incoming packets from a `192.168.x.x` address — this is likely your LiDAR.
 
 ### Example of Lidar ip searching:  
-<img width="961" height="274" alt="image" src="https://github.com/user-attachments/assets/b4e74a22-dec0-4e34-b253-b1df17ee5263" />
 
 For example my Lidars' ip addresses are 192.168.1.133 and 192.168.1.134.
 
@@ -69,11 +68,7 @@ For example you get a lidar ip that is 192.168.0.100
 
 Copy your ip addresses and paste on web search bar
 
-<img width="1366" height="728" alt="image" src="https://github.com/user-attachments/assets/4aaddd87-d0dc-450a-9b41-7c2f74da1553" />
-
-Then you will ses a page like this:
-
-<img width="1844" height="975" alt="image" src="https://github.com/user-attachments/assets/600085ee-4680-45a0-85d4-049726550256" />
+You should see a SICK service webpage
 
 Login to service level
 - Password: servicelevel
@@ -96,7 +91,7 @@ ros2 launch lidar_driver second_lidar.py
 
 ## Point cloud
 
-<img width="914" height="684" alt="image" src="https://github.com/user-attachments/assets/2c31a1f2-c66f-43bf-bd42-9e8f142918da" />
+In the Rviz2 of the lidar_driver package you launched:
 
 - Change the fixed frame to "world" 
 - Unselect the LaserScan and select PointCloud2
